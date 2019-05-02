@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>191987010765-optmihgfbun8vr30f0t4ku6qp0sdfbpp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.191987010765-optmihgfbun8vr30f0t4ku6qp0sdfbpp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDYVfg-r1zs6F-NytuXV4wR2yzYni6oPus</string>
+	<key>GCM_SENDER_ID</key>
+	<string>191987010765</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Pedro-Lopes.PokeMap</string>
+	<key>PROJECT_ID</key>
+	<string>pokemap-bd9b8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>pokemap-bd9b8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:191987010765:ios:d53f3379fa00e3ad</string>
+	<key>DATABASE_URL</key>
+	<string>https://pokemap-bd9b8.firebaseio.com</string>
+</dict>
+</plist>
