@@ -10,8 +10,8 @@
 		06540771C222ECD5BF64DCF6 /* Pods_PokeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2485F10BCF28ED9E69556C8F /* Pods_PokeMap.framework */; };
 		7485647A67966854A4E7F528 /* Pods_PokeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1556B3474DE3A1136A8AC58 /* Pods_PokeMapTests.framework */; };
 		A031BCAA227A706400792C72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCA9227A706400792C72 /* AppDelegate.swift */; };
-		A031BCAC227A706400792C72 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCAB227A706400792C72 /* FirstViewController.swift */; };
-		A031BCAE227A706400792C72 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCAD227A706400792C72 /* SecondViewController.swift */; };
+		A031BCAC227A706400792C72 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCAB227A706400792C72 /* MapViewController.swift */; };
+		A031BCAE227A706400792C72 /* TeamListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCAD227A706400792C72 /* TeamListViewController.swift */; };
 		A031BCB1227A706400792C72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A031BCAF227A706400792C72 /* Main.storyboard */; };
 		A031BCB3227A706600792C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A031BCB2227A706600792C72 /* Assets.xcassets */; };
 		A031BCB6227A706600792C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A031BCB4227A706600792C72 /* LaunchScreen.storyboard */; };
@@ -38,8 +38,8 @@
 		987B686C964FCDA129A32EC1 /* Pods-PokeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokeMap.release.xcconfig"; path = "Target Support Files/Pods-PokeMap/Pods-PokeMap.release.xcconfig"; sourceTree = "<group>"; };
 		A031BCA6227A706400792C72 /* PokeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A031BCA9227A706400792C72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A031BCAB227A706400792C72 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A031BCAD227A706400792C72 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A031BCAB227A706400792C72 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A031BCAD227A706400792C72 /* TeamListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewController.swift; sourceTree = "<group>"; };
 		A031BCB0227A706400792C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A031BCB2227A706600792C72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A031BCB5227A706600792C72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,8 +148,8 @@
 		A0A9448A227A912400E2E142 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A031BCAB227A706400792C72 /* FirstViewController.swift */,
-				A031BCAD227A706400792C72 /* SecondViewController.swift */,
+				A031BCAB227A706400792C72 /* MapViewController.swift */,
+				A031BCAD227A706400792C72 /* TeamListViewController.swift */,
 				A0A9448B227A915000E2E142 /* LoginViewController.swift */,
 				A0A94491227A9A8C00E2E142 /* RegisterViewController.swift */,
 			);
@@ -387,10 +387,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0A9448C227A915000E2E142 /* LoginViewController.swift in Sources */,
-				A031BCAE227A706400792C72 /* SecondViewController.swift in Sources */,
+				A031BCAE227A706400792C72 /* TeamListViewController.swift in Sources */,
 				A031BCAA227A706400792C72 /* AppDelegate.swift in Sources */,
 				A0A94492227A9A8C00E2E142 /* RegisterViewController.swift in Sources */,
-				A031BCAC227A706400792C72 /* FirstViewController.swift in Sources */,
+				A031BCAC227A706400792C72 /* MapViewController.swift in Sources */,
 				A0A94490227A93EB00E2E142 /* FirebaseAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
