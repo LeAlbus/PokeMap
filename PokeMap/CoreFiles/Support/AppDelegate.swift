@@ -10,11 +10,12 @@ import UIKit
 import Firebase
 import GoogleMaps
 
+var GlobalPokeList: [Pokemon] = []
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
@@ -22,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyCVBpoi3FoD6Y6tpfoJVV6yGDLNqTM2fxY")
         
         return true
+    }
+    
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

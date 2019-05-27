@@ -23,6 +23,15 @@ class FirebaseAuthManager {
         }
     }
     
+    func logoutUser() {
+    
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     func registerUser(email: String, password: String, successHandler: @escaping ()->Void, errorHandler: @escaping ()->Void){
         
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
@@ -34,4 +43,6 @@ class FirebaseAuthManager {
             }
         }
     }
+    
+    
 }
