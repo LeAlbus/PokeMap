@@ -56,11 +56,15 @@ class APIManager {
         }
         
         if searchValue != "" && searchValue != "-1" {
-            Alamofire.request("\(SearchAPIUrl)pokemon/\(searchValue)").responseJSON { response in
+            
+            let requestURL = "\(SearchAPIUrl)pokemon/\(searchValue)"
+            
+            Alamofire.request(requestURL).responseJSON { response in
                 switch response.result {
                 case .success:
                     do{
                         let data = response.data
+                        
                         let responseParsed = try JSONDecoder().decode(PokeInfo.self, from: data!)
                         
                         resultHandler(responseParsed)
@@ -82,4 +86,5 @@ class APIManager {
             }
         }
     }
+
 }

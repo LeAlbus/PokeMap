@@ -626,7 +626,7 @@
                                 <rect key="frame" x="32" y="317" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-I5-Xxr">
                                 <rect key="frame" x="157" y="355" width="61" height="30"/>
@@ -679,6 +679,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ADd-ll-eXe"/>
                     <connections>
+                        <outlet property="addButton" destination="j8g-I5-Xxr" id="ACR-Qr-JBb"/>
                         <outlet property="errorLabel" destination="0eV-yk-0Re" id="dEP-5t-vXZ"/>
                         <outlet property="pokeErrorLabel" destination="0eV-yk-0Re" id="ZGM-tX-1kK"/>
                         <outlet property="pokeHeightLabel" destination="DWX-Jm-ANf" id="2Df-Ka-C0n"/>
