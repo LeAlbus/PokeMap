@@ -47,4 +47,3 @@ class PokemonListViewController: UITableViewController {
         return cell
     }
 }
-

@@ -488,13 +488,13 @@
         <!--Goal list-->
         <scene sceneID="M5t-7m-bnF">
             <objects>
-                <tableViewController id="mBb-8L-wET" sceneMemberID="viewController">
+                <tableViewController id="mBb-8L-wET" customClass="GoalsListTableViewController" customModule="PokeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YcY-Wr-Pk2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="126" id="B8r-Yy-IXu">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GoalCell" rowHeight="126" id="B8r-Yy-IXu" customClass="GoalTableViewCell" customModule="PokeMap" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="126"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B8r-Yy-IXu" id="I60-NR-RLY">
@@ -545,6 +545,13 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="TaS-qu-rjq" secondAttribute="bottom" constant="16" id="zUB-7n-hWc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="pokeHeightLabel" destination="MhG-RH-mDz" id="Wwc-dF-lh4"/>
+                                    <outlet property="pokeNameLabel" destination="lae-TB-UN4" id="5Yo-bc-JKj"/>
+                                    <outlet property="pokeOwnedTotal" destination="TaS-qu-rjq" id="tyA-DH-uqB"/>
+                                    <outlet property="pokeWidthLabel" destination="kP7-V3-yWK" id="ENJ-tv-68Y"/>
+                                    <outlet property="pokeWishedTotal" destination="AQn-EZ-6bc" id="sjT-z3-jZJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -16,6 +16,8 @@
 		A031BCB3227A706600792C72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A031BCB2227A706600792C72 /* Assets.xcassets */; };
 		A031BCB6227A706600792C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A031BCB4227A706600792C72 /* LaunchScreen.storyboard */; };
 		A031BCC1227A706600792C72 /* PokeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031BCC0227A706600792C72 /* PokeMapTests.swift */; };
+		A073A659229BAE870080A356 /* GoalsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073A658229BAE870080A356 /* GoalsListTableViewController.swift */; };
+		A073A65B229BAEB20080A356 /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073A65A229BAEB20080A356 /* GoalTableViewCell.swift */; };
 		A0A94489227A8B5900E2E142 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0A94488227A8B5900E2E142 /* GoogleService-Info.plist */; };
 		A0A9448C227A915000E2E142 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9448B227A915000E2E142 /* LoginViewController.swift */; };
 		A0A94490227A93EB00E2E142 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9448F227A93EB00E2E142 /* FirebaseAuthManager.swift */; };
@@ -58,6 +60,8 @@
 		A031BCBC227A706600792C72 /* PokeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A031BCC0227A706600792C72 /* PokeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeMapTests.swift; sourceTree = "<group>"; };
 		A031BCC2227A706600792C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A073A658229BAE870080A356 /* GoalsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsListTableViewController.swift; sourceTree = "<group>"; };
+		A073A65A229BAEB20080A356 /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
 		A0A94488227A8B5900E2E142 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0A9448B227A915000E2E142 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A0A9448F227A93EB00E2E142 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
@@ -173,7 +177,6 @@
 		A0A9448A227A912400E2E142 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A0D50DB8227ECCA100D211B5 /* New Group */,
 				A0D7EA99227EAA40009CF280 /* Controllers */,
 				A0D7EA94227EA4D8009CF280 /* Cell */,
 			);
@@ -198,13 +201,6 @@
 			path = Autentication;
 			sourceTree = "<group>";
 		};
-		A0D50DB8227ECCA100D211B5 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		A0D7EA8D227E7FA9009CF280 /* PokeAPI */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D7EA95227EA4ED009CF280 /* PokemonTableViewCell.swift */,
+				A073A65A229BAEB20080A356 /* GoalTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -233,6 +230,7 @@
 				A0F1962A229B42F5006B8528 /* AboutScreenViewController.swift */,
 				A0F1962E229B489F006B8528 /* AdjustsViewController.swift */,
 				A0F19632229B8131006B8528 /* AddPokemonViewController.swift */,
+				A073A658229BAE870080A356 /* GoalsListTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -476,9 +474,11 @@
 				A031BCAA227A706400792C72 /* AppDelegate.swift in Sources */,
 				A0A94492227A9A8C00E2E142 /* RegisterViewController.swift in Sources */,
 				A0F19633229B8131006B8528 /* AddPokemonViewController.swift in Sources */,
+				A073A65B229BAEB20080A356 /* GoalTableViewCell.swift in Sources */,
 				A0D7EA8F227E929F009CF280 /* Constants.swift in Sources */,
 				A031BCAC227A706400792C72 /* MapViewController.swift in Sources */,
 				A0F1962F229B489F006B8528 /* AdjustsViewController.swift in Sources */,
+				A073A659229BAE870080A356 /* GoalsListTableViewController.swift in Sources */,
 				A0A94490227A93EB00E2E142 /* FirebaseAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
