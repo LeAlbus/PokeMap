@@ -42,10 +42,15 @@ class LoginViewController: UIViewController {
             FirebaseAuthManager().autenticateUser(email: email, password: password, successHandler: {self.proceedFromLogin()}, errorHandler: {self.loginError()})
         }
         
-        else {
-            self.handleBlockerView(appear: true)
-            FirebaseAuthManager().autenticateUser(email: "pedrolopes.dev@gmail.com", password: "123456", successHandler: {self.proceedFromLogin()}, errorHandler: {self.loginError()})
-        }
+        //MARK: Uncomment this will automatically login when clicking login button
+//        else {
+//            self.handleBlockerView(appear: true)
+//            FirebaseAuthManager().autenticateUser(email: "YOUR_EMAIL",
+//                                                  password: "YOUR_PASSWORD",
+//                                                  successHandler: {
+//                                                    self.proceedFromLogin()},
+//                                                    errorHandler: {self.loginError()})
+//        }
     }
     
     func handleBlockerView(appear: Bool) {

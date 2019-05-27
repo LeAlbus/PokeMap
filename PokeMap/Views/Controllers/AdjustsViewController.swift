@@ -50,4 +50,15 @@ class AdjustsViewController: UIViewController {
         UserDefaultsManager().setPokemonSpawnLimit(pokemonSpawns)
         print (pokemonSpawns)
     }
+    
+    @IBAction func testModeAction(_ sender: Any) {
+        
+        
+    }
+    
+    @IBAction func clearStatusAction(_ sender: Any) {
+        
+        UserDefaultsManager().removeData()
+        FirebaseDatabaseManager().removeData()
+    }
 }

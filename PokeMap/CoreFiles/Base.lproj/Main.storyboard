@@ -215,10 +215,13 @@
                                     <action selector="logoutAction:" destination="EUu-Im-BIS" eventType="touchUpInside" id="Woa-er-dTs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-67-lxR">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgO-67-lxR">
                                 <rect key="frame" x="147" y="385" width="81" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Test Mode"/>
+                                <connections>
+                                    <action selector="testModeAction:" destination="EUu-Im-BIS" eventType="touchUpInside" id="1Mk-Sg-4iJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zK-nl-qh1">
                                 <rect key="frame" x="145.5" y="504" width="84" height="33"/>
@@ -226,6 +229,9 @@
                                 <state key="normal" title="Clear Stats">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0099468241870000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearStatusAction:" destination="EUu-Im-BIS" eventType="touchUpInside" id="brJ-lt-YVW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attention! This option will clear all user data. Removing all pokemons captures and added to goals." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zuG-Vx-ttv">
                                 <rect key="frame" x="32" y="435" width="311" height="61"/>
@@ -502,8 +508,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lae-TB-UN4">
-                                            <rect key="frame" x="32" y="19" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="32" y="19" width="43.5" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -568,11 +574,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="lIu-OP-IHw" kind="push" id="cZr-iN-Lx5"/>
+                                    <segue destination="lIu-OP-IHw" kind="push" identifier="EditGoal" id="cZr-iN-Lx5"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="lIu-OP-IHw" kind="show" id="xBB-vS-jMo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncg-s1-sFL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -636,8 +645,8 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8g-I5-Xxr">
-                                <rect key="frame" x="157" y="355" width="61" height="30"/>
-                                <state key="normal" title="Add goal"/>
+                                <rect key="frame" x="32" y="355" width="311" height="30"/>
+                                <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="addPokeAction:" destination="lIu-OP-IHw" eventType="touchUpInside" id="hm3-QD-8Hv"/>
                                 </connections>
@@ -651,13 +660,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="j8g-I5-Xxr" firstAttribute="centerX" secondItem="clw-jI-CwT" secondAttribute="centerX" id="1Dh-lD-TMq"/>
                             <constraint firstItem="thY-pw-LuX" firstAttribute="top" secondItem="1eb-t3-OpD" secondAttribute="bottom" constant="16" id="2VO-a9-Jvr"/>
                             <constraint firstItem="ijx-v2-6Sa" firstAttribute="leading" secondItem="clw-jI-CwT" secondAttribute="leading" constant="32" id="2Xf-5b-dcn"/>
                             <constraint firstItem="1eb-t3-OpD" firstAttribute="leading" secondItem="clw-jI-CwT" secondAttribute="leading" constant="32" id="34N-FE-DnI"/>
                             <constraint firstItem="1eb-t3-OpD" firstAttribute="top" secondItem="clw-jI-CwT" secondAttribute="top" constant="16" id="35O-2K-z0V"/>
                             <constraint firstItem="clw-jI-CwT" firstAttribute="trailing" secondItem="0eV-yk-0Re" secondAttribute="trailing" constant="32" id="3tx-Vj-ZE4"/>
                             <constraint firstItem="DWX-Jm-ANf" firstAttribute="top" secondItem="K9q-br-oYe" secondAttribute="bottom" constant="8" id="8La-hD-aue"/>
+                            <constraint firstItem="clw-jI-CwT" firstAttribute="trailing" secondItem="j8g-I5-Xxr" secondAttribute="trailing" constant="32" id="9K6-8i-1fK"/>
                             <constraint firstItem="j8g-I5-Xxr" firstAttribute="top" secondItem="D2Y-Gu-Y0L" secondAttribute="bottom" constant="8" id="EKc-v5-XY7"/>
                             <constraint firstItem="clw-jI-CwT" firstAttribute="trailing" secondItem="ijx-v2-6Sa" secondAttribute="trailing" constant="32" id="IwC-zP-JcQ"/>
                             <constraint firstItem="ijx-v2-6Sa" firstAttribute="top" secondItem="DWX-Jm-ANf" secondAttribute="bottom" constant="8" id="Mnp-Gz-X0W"/>
@@ -669,6 +678,7 @@
                             <constraint firstItem="clN-D0-aPc" firstAttribute="top" secondItem="ijx-v2-6Sa" secondAttribute="bottom" constant="16" id="bAz-nw-xhQ"/>
                             <constraint firstItem="0kR-5J-HHy" firstAttribute="centerX" secondItem="clw-jI-CwT" secondAttribute="centerX" id="bYG-T4-H1h"/>
                             <constraint firstItem="0kR-5J-HHy" firstAttribute="leading" secondItem="clw-jI-CwT" secondAttribute="leading" constant="32" id="csY-Lq-kA4"/>
+                            <constraint firstItem="j8g-I5-Xxr" firstAttribute="leading" secondItem="clw-jI-CwT" secondAttribute="leading" constant="32" id="e6l-HM-mL2"/>
                             <constraint firstItem="K9q-br-oYe" firstAttribute="leading" secondItem="clw-jI-CwT" secondAttribute="leading" constant="32" id="eCR-9f-ezO"/>
                             <constraint firstItem="clw-jI-CwT" firstAttribute="trailing" secondItem="clN-D0-aPc" secondAttribute="trailing" constant="32" id="ecc-9r-Ta9"/>
                             <constraint firstItem="clw-jI-CwT" firstAttribute="trailing" secondItem="1eb-t3-OpD" secondAttribute="trailing" constant="32" id="fbe-yV-iX7"/>
@@ -811,4 +821,7 @@
         <image name="pokeball" width="298" height="298"/>
         <image name="pokeballSplash" width="183" height="183"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cZr-iN-Lx5"/>
+    </inferredMetricsTieBreakers>
 </document>
